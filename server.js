@@ -20,8 +20,13 @@ export const razorpay = new Razorpay({
 const PORT = process.env.PORT || 5000;
 
 
-app.listen(PORT, async () => {
-  // Connect to DB
+
+app.get("/", async (req, res) => {
   await connectToDB();
-  console.log(`App is running at http://localhost:${PORT}`);
+  res.send("Hello from Vercel!");
 });
+// app.listen(PORT, async () => {
+//   // Connect to DB
+//   await connectToDB();
+//   console.log(`App is running at http://localhost:${PORT}`);
+// });

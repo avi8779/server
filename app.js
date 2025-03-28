@@ -1,5 +1,5 @@
-import cookieParser from 'cookie-parser';
 config();
+import cookieParser from 'cookie-parser';
 import express from 'express';
 import { config } from 'dotenv';
 import cors from 'cors';
